@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'ui/home_screen.dart';
+import 'ui/screens/home_screen.dart';
 
 class App extends StatelessWidget {
   @override
