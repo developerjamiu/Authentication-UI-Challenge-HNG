@@ -1,16 +1,5 @@
-# ui_challenge_auth
+# UI Authentication Screens Challenge
 
-A new Flutter project.
+This is a Flutter UI challenge I took part in with some enthusiastic flutter developers during the HNGi7 Internship.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![alt text](https://lh3.googleusercontent.com/gudnx-U7oo39vYXkq4CV6qu3EkDMhbhQXAUlCAF747oiZtdMrPGMtr6-mMIA7XruVXuwO7tzZfzVSqnHv6WBoIi5kIUM2gAGwUES0UWtgIMxwIxmMdXgZBQi_bWOtCbdQNWcfXFtcv5ycmXX9kfs4PwMmeleu2v5Pl0mKmnuLoOA5Q19eREkbXz8WztrIU6q-xF7Swv-mJQ7WMg169p1V5zSJStmc2wibmWJFfdvTVBjgM-P2EwjTN72WKgLSzUx6g8pzdsNV7euIRU4M8zyGISJHTyF5FZHpNmtPE-ML-90Jtjnzj6CHziSpqjI2IllA8V237my9IL-1lDFzzJAveSoi8UwL3oV-3G41G1x0sOh62T6vUxfchSwUTHFnS2QwBdZJ6a1eGVJWmugTyT9gIunMOT3qKSNs5H_uC7ms1oVToS4r_Q7ceF4J7fYoyJ1gmYCCPIo0Y2cNe11Ihr3krsNbIuYRKs1w-bxYRmTOd7Ut41hmA2TDf6Tq-xycnixdvytHgOEGMnYjU--RS9kzVBwVBhT-XjDczM643qaxcAeJPSTI6epIcJS7DQjx2mS_YasklY9eyGwn8gCSxxHF0yuP86oNp5yFBBTwPmX2UI7d1Ltc7xpXu_19XUkouI8GVUbaGPdzGPvPRAjq1LULX02UyK3mPpYzVYuUTuBzz47wfpzFWizliE0qUmjJA=w294-h220-no?authuser=0)
