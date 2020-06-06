@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'login_screen.dart';
+import 'register_screen.dart';
 import '../widgets/custom_flat_button.dart';
 import '../../utilities/constants.dart';
 
@@ -31,15 +32,18 @@ class HomeScreen extends StatelessWidget {
               ),
               kMediumHorizontalSpacing,
               Expanded(
-                child: Image.asset(
-                  'assets/auth_1.png',
+                child: Hero(
+                  tag: 'Image',
+                  child: Image.asset(
+                    'assets/auth_1.png',
+                  ),
                 ),
               ),
               kMediumHorizontalSpacing,
               CustomFlatButton(
                 color: kPinkColor,
                 onPressed: () {
-                  Navigator.of(context).pushNamed(LoginScreen.routeName);
+                  Navigator.of(context).pushNamed(RegisterScreen.routeName);
                 },
                 text: Text('Sign Up'),
                 textColor: Colors.white,
@@ -47,7 +51,9 @@ class HomeScreen extends StatelessWidget {
               kMediumHorizontalSpacing,
               CustomFlatButton(
                 color: kGreyColor,
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushNamed(LoginScreen.routeName);
+                },
                 text: Text('Log In'),
               ),
             ],

@@ -41,7 +41,10 @@ class CustomTextField extends StatelessWidget {
               ),
               hintText: hintText,
               hintStyle: TextStyle(color: Colors.black26),
-              contentPadding: EdgeInsets.symmetric(horizontal: 16.0),
+              contentPadding: EdgeInsets.symmetric(
+                horizontal: 16.0,
+                vertical: 20.0,
+              ),
               border: OutlineInputBorder(
                 borderSide: BorderSide(
                   style: BorderStyle.none,

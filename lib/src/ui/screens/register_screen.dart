@@ -1,26 +1,26 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
+import 'login_screen.dart';
 import '../widgets/custom_text_field.dart';
 import '../../utilities/constants.dart';
 import '../widgets/custom_flat_button.dart';
-import 'register_screen.dart';
 
-class LoginScreen extends StatefulWidget {
-  static const String routeName = 'login';
+class RegisterScreen extends StatefulWidget {
+  static const String routeName = 'register';
 
   @override
-  _LoginScreenState createState() => _LoginScreenState();
+  _RegisterScreenState createState() => _RegisterScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _RegisterScreenState extends State<RegisterScreen> {
   TapGestureRecognizer onTapRecognizer;
 
   @override
   void initState() {
     onTapRecognizer = TapGestureRecognizer()
       ..onTap = () {
-        Navigator.of(context).pushReplacementNamed(RegisterScreen.routeName);
+        Navigator.of(context).pushReplacementNamed(LoginScreen.routeName);
       };
     super.initState();
   }
@@ -67,7 +67,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         'assets/auth_01_nobackground.png',
                       ),
                     ),
-                  ),
+                  )
                 ],
               ),
             ),
@@ -84,6 +84,11 @@ class _LoginScreenState extends State<LoginScreen> {
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
+                  CustomTextField(
+                    label: 'Full Name',
+                    hintText: 'John Doe',
+                  ),
+                  kSmallHorizontalSpacing,
                   CustomTextField(
                     label: 'Email Address',
                     hintText: 'example@gmail.com',
@@ -121,10 +126,10 @@ class _LoginScreenState extends State<LoginScreen> {
                       fontSize: 16,
                     ),
                   ),
-                  kBigHorizontalSpacing,
+                  kMediumHorizontalSpacing,
                   socialIcons(),
-                  kBigHorizontalSpacing,
-                  signUpText(),
+                  kMediumHorizontalSpacing,
+                  signInText(),
                 ],
               ),
             ),
@@ -183,17 +188,17 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  Widget signUpText() {
+  Widget signInText() {
     return RichText(
       text: TextSpan(
-        text: "Don't have an account? ",
+        text: "Already have an account? ",
         style: TextStyle(
           color: Colors.black54,
           fontSize: 14,
         ),
         children: <TextSpan>[
           TextSpan(
-            text: 'Sign Up',
+            text: 'Sign In',
             recognizer: onTapRecognizer,
             style: TextStyle(
               fontWeight: FontWeight.bold,

@@ -20,7 +20,7 @@ class CustomFlatButton extends StatelessWidget {
       child: text,
       color: color,
       textColor: textColor,
-      padding: EdgeInsets.symmetric(vertical: 16.0),
+      padding: EdgeInsets.symmetric(vertical: 20.0),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16.0),
       ),

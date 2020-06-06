@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'ui/screens/home_screen.dart';
 import 'ui/screens/login_screen.dart';
+import 'ui/screens/register_screen.dart';
 
 class App extends StatelessWidget {
   @override
@@ -14,6 +15,7 @@ class App extends StatelessWidget {
       routes: {
         HomeScreen.routeName: (context) => HomeScreen(),
         LoginScreen.routeName: (context) => LoginScreen(),
+        RegisterScreen.routeName: (context) => RegisterScreen(),
       },
     );
   }
