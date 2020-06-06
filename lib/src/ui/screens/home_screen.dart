@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
+import 'login_screen.dart';
 import '../widgets/custom_flat_button.dart';
 import '../../utilities/constants.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const String routeName = 'home';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,15 +38,17 @@ class HomeScreen extends StatelessWidget {
               kMediumHorizontalSpacing,
               CustomFlatButton(
                 color: kPinkColor,
-                onPressed: () {},
-                text: 'Sign Up',
+                onPressed: () {
+                  Navigator.of(context).pushNamed(LoginScreen.routeName);
+                },
+                text: Text('Sign Up'),
                 textColor: Colors.white,
               ),
               kMediumHorizontalSpacing,
               CustomFlatButton(
                 color: kGreyColor,
                 onPressed: () {},
-                text: 'Log In',
+                text: Text('Log In'),
               ),
             ],
           ),

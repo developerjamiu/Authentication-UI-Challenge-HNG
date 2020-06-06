@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CustomFlatButton extends StatelessWidget {
   final Function onPressed;
-  final String text;
+  final Widget text;
   final Color color;
   final Color textColor;
 
@@ -17,7 +17,7 @@ class CustomFlatButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return FlatButton(
       onPressed: onPressed,
-      child: Text(text),
+      child: text,
       color: color,
       textColor: textColor,
       padding: EdgeInsets.symmetric(vertical: 16.0),
